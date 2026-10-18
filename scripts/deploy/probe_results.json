@@ -1,0 +1,126 @@
+{
+  "contractAddress": "0x0DB3Eb197eb49D93dA6B53B8DCb9fD789B42E2B3",
+  "deployTxHash": "0x17f3674c6e12e0594442ca3cafb1e0f59e3a3de2e82d02662bc9e14cc9cbf4fe",
+  "deployLatency": "6.67",
+  "codeSha256": "5d6ea5507b39f9013090f4c24b2e8dd984ea516534fa8d8314a8630f2dcce68b",
+  "sender": "0x13855Ea1a7958Ea19673cdAc069E44e332574AA2",
+  "views": {
+    "sender": "0x13855Ea1a7958Ea19673cdAc069E44e332574AA2",
+    "bool": true,
+    "str": "studionet_probe_ok",
+    "list": [
+      "v0",
+      "v1",
+      "v2"
+    ],
+    "int_arg": "int_received:42:int"
+  },
+  "transactions": [
+    {
+      "action": "deploy_probe",
+      "txHash": "0x17f3674c6e12e0594442ca3cafb1e0f59e3a3de2e82d02662bc9e14cc9cbf4fe",
+      "status_name": "ACCEPTED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_result": "SUCCESS",
+      "latency_seconds": "6.67"
+    },
+    {
+      "action": "probe_write_int",
+      "txHash": "0x497063b8ad2201d1ee325d791e00118b27b12890ffe1b57e490cebb0b3d52fd2",
+      "status_name": "ACCEPTED",
+      "leader_result": "SUCCESS",
+      "latency_seconds": "8.54",
+      "readBack": "stored_int:120"
+    },
+    {
+      "action": "probe_env_and_storage",
+      "txHash": "0xa36cce9ff7ad4e31b0ab1c3bd443991f1bc4200ec6f669d2c2e331a48d35f304",
+      "status_name": "ACCEPTED",
+      "leader_result": "SUCCESS",
+      "latency_seconds": "5.54",
+      "envInfo": {
+        "ip": "192.168.1.1",
+        "parsed_netloc": "cloudco.example:443",
+        "parsed_path": "/invoices/inv-1",
+        "parsed_scheme": "https",
+        "payload_len": 10240,
+        "regex_clean": "Hello World 120 USD",
+        "sender": "0x13855Ea1a7958Ea19673cdAc069E44e332574AA2",
+        "sha256": "8e16779e62aa902c827a44993a32e65e0cee0b8ffe34acde59071623c716ed4a",
+        "unescaped": "\"hello & world\""
+      }
+    },
+    {
+      "action": "probe_web_fetch_md",
+      "txHash": "0xb7901db437b67dac1b87f835a10545ec6acc70ac7d3b9e92346b76c1014037a1",
+      "status_name": "ACCEPTED",
+      "leader_result": "SUCCESS",
+      "latency_seconds": "11.84",
+      "result": {
+        "length": 670,
+        "preview": "# CloudCo Invoice INV-2026-A120\n\nInvoice Number: INV-2026-A120\nVendor: CloudCo Infrastructure Services Ltd (cloudco.exam",
+        "sha256": "75a5f45576ea6f2de80632c1ba960b738f05b77b652322cadcabbb1cbbaba48a",
+        "status": 200
+      }
+    },
+    {
+      "action": "probe_web_fetch_html",
+      "txHash": "0x5f9d7136f1189a7f3b0d4e6c71229402fdd366a0223db6f9d7f09b06ab2b48de",
+      "status_name": "ACCEPTED",
+      "leader_result": "SUCCESS",
+      "latency_seconds": "5.33",
+      "result": {
+        "length": 1246,
+        "preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>CLOUDCO INVOICE - INV-2026-A120</title>\n</",
+        "sha256": "5d514ca2e0f69bf95ab9a321a0002ba285a95fa959b6077133e1a27f5b412eae",
+        "status": 200
+      }
+    },
+    {
+      "action": "probe_web_fetch_404",
+      "txHash": "0x2c27e76a9baab286a899b5d37d0e9006de8c688b7b45227268c49ce34c5a0cdd",
+      "status_name": "ACCEPTED",
+      "leader_result": "SUCCESS",
+      "latency_seconds": "11.96",
+      "result": {
+        "length": 14,
+        "preview": "404: Not Found",
+        "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+        "status": 404
+      }
+    },
+    {
+      "action": "probe_byte_stability",
+      "txHash": "0xf98d57db1be6928004a804fe0d166e412573313e29692d896bcfcdb7d249c47c",
+      "status_name": "ACCEPTED",
+      "leader_result": "SUCCESS",
+      "latency_seconds": "11.88",
+      "result": {
+        "first_hash": "75a5f45576ea6f2de80632c1ba960b738f05b77b652322cadcabbb1cbbaba48a",
+        "hashes": [
+          "75a5f45576ea6f2de80632c1ba960b738f05b77b652322cadcabbb1cbbaba48a",
+          "75a5f45576ea6f2de80632c1ba960b738f05b77b652322cadcabbb1cbbaba48a",
+          "75a5f45576ea6f2de80632c1ba960b738f05b77b652322cadcabbb1cbbaba48a",
+          "75a5f45576ea6f2de80632c1ba960b738f05b77b652322cadcabbb1cbbaba48a",
+          "75a5f45576ea6f2de80632c1ba960b738f05b77b652322cadcabbb1cbbaba48a"
+        ],
+        "lengths": [
+          670,
+          670,
+          670,
+          670,
+          670
+        ],
+        "stable": true
+      }
+    },
+    {
+      "action": "probe_llm_execution",
+      "txHash": "0xa57392b168e945ec16b6cbe77bcae31fb60537fe8fd3bf2199adf647b0913965",
+      "status_name": "UNDETERMINED",
+      "leader_result": "SUCCESS",
+      "latency_seconds": "55.48",
+      "output": ""
+    }
+  ]
+}
