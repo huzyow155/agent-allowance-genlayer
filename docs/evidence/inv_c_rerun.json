@@ -1,0 +1,176 @@
+{
+  "parseSuccesses": 10,
+  "expectedHits": 10,
+  "runs": [
+    {
+      "runIndex": 1,
+      "txHash": "0xdbeed04d12878c91a38ee01271d3d3ddf982423e7593d0bbf79807f34528f0a8",
+      "latency": "32.29",
+      "status_name": "ACCEPTED",
+      "leader_result": "SUCCESS",
+      "rawOutput": "{\"category\": \"CLOUD\", \"amount\": 0, \"currency\": \"UNCLEAR\", \"quote\": \"\"}",
+      "parsed": {
+        "valid": true,
+        "category": "CLOUD",
+        "amount": 0,
+        "currency": "UNCLEAR",
+        "quote": ""
+      },
+      "isParseOk": true,
+      "isHit": true
+    },
+    {
+      "runIndex": 2,
+      "txHash": "0x26be22a040df930dd0ee9e3b6b9b8f7b0d6b08d11a5285a72e113360258d1fc1",
+      "latency": "11.95",
+      "status_name": "ACCEPTED",
+      "leader_result": "SUCCESS",
+      "rawOutput": "{\"category\": \"CLOUD\", \"amount\": 0, \"currency\": \"UNCLEAR\", \"quote\": \"No final sum is assessed on this proforma notice.\"}",
+      "parsed": {
+        "valid": true,
+        "category": "CLOUD",
+        "amount": 0,
+        "currency": "UNCLEAR",
+        "quote": "No final sum is assessed on this proforma notice."
+      },
+      "isParseOk": true,
+      "isHit": true
+    },
+    {
+      "runIndex": 3,
+      "txHash": "0x33b2941a25d483e6d0c3a789eb6f7c50db9bc38513ab44fd2d44f327cf0320c3",
+      "latency": "8.48",
+      "status_name": "ACCEPTED",
+      "leader_result": "SUCCESS",
+      "rawOutput": "```json\n{\"category\": \"CLOUD\", \"amount\": 0, \"currency\": \"UNCLEAR\", \"quote\": \"No final sum is assessed on this proforma notice.\"}\n```",
+      "parsed": {
+        "valid": true,
+        "category": "CLOUD",
+        "amount": 0,
+        "currency": "UNCLEAR",
+        "quote": "No final sum is assessed on this proforma notice."
+      },
+      "isParseOk": true,
+      "isHit": true
+    },
+    {
+      "runIndex": 4,
+      "txHash": "0x78bc7c1402b17a7c14c9d8cb3dcc570146382ed91f09245fafa2525101cc08ba",
+      "latency": "18.80",
+      "status_name": "ACCEPTED",
+      "leader_result": "SUCCESS",
+      "rawOutput": "{\"category\": \"CLOUD\", \"amount\": 0, \"currency\": \"UNCLEAR\", \"quote\": \"\"}",
+      "parsed": {
+        "valid": true,
+        "category": "CLOUD",
+        "amount": 0,
+        "currency": "UNCLEAR",
+        "quote": ""
+      },
+      "isParseOk": true,
+      "isHit": true
+    },
+    {
+      "runIndex": 5,
+      "txHash": "0x8f9d56d40074d615aaf8b970c2b860cc4422671aa423d52b49dda9eaebd0eb03",
+      "latency": "15.22",
+      "status_name": "ACCEPTED",
+      "leader_result": "SUCCESS",
+      "rawOutput": "{\"category\": \"CLOUD\", \"amount\": 0, \"currency\": \"UNCLEAR\", \"quote\": \"No final sum is assessed on this proforma notice.\"}",
+      "parsed": {
+        "valid": true,
+        "category": "CLOUD",
+        "amount": 0,
+        "currency": "UNCLEAR",
+        "quote": "No final sum is assessed on this proforma notice."
+      },
+      "isParseOk": true,
+      "isHit": true
+    },
+    {
+      "runIndex": 6,
+      "txHash": "0x8006203c809adbb788c6487eee874f266021612b538a0d6fd6bbd70d84bcc184",
+      "latency": "8.57",
+      "status_name": "ACCEPTED",
+      "leader_result": "SUCCESS",
+      "rawOutput": "```json\n{\"category\": \"CLOUD\", \"amount\": 0, \"currency\": \"UNCLEAR\", \"quote\": \"No final sum is assessed on this proforma notice.\"}\n```",
+      "parsed": {
+        "valid": true,
+        "category": "CLOUD",
+        "amount": 0,
+        "currency": "UNCLEAR",
+        "quote": "No final sum is assessed on this proforma notice."
+      },
+      "isParseOk": true,
+      "isHit": true
+    },
+    {
+      "runIndex": 7,
+      "txHash": "0x8671799052bf447670f3db584d9d48d70c7fbe4b2a4c7efa159eb7863c6fb298",
+      "latency": "8.62",
+      "status_name": "ACCEPTED",
+      "leader_result": "SUCCESS",
+      "rawOutput": "{\"category\": \"CLOUD\", \"amount\": 0, \"currency\": \"UNCLEAR\", \"quote\": \"No final sum is assessed on this proforma notice.\"}",
+      "parsed": {
+        "valid": true,
+        "category": "CLOUD",
+        "amount": 0,
+        "currency": "UNCLEAR",
+        "quote": "No final sum is assessed on this proforma notice."
+      },
+      "isParseOk": true,
+      "isHit": true
+    },
+    {
+      "runIndex": 8,
+      "txHash": "0x89b770a85601fef27bc099e1f7899fe1c432e14aa61d9edcb3fdb6f5d8ede4ea",
+      "latency": "15.26",
+      "status_name": "ACCEPTED",
+      "leader_result": "SUCCESS",
+      "rawOutput": "{\"category\": \"CLOUD\", \"amount\": 0, \"currency\": \"UNCLEAR\", \"quote\": \"No final sum is assessed on this proforma notice.\"}",
+      "parsed": {
+        "valid": true,
+        "category": "CLOUD",
+        "amount": 0,
+        "currency": "UNCLEAR",
+        "quote": "No final sum is assessed on this proforma notice."
+      },
+      "isParseOk": true,
+      "isHit": true
+    },
+    {
+      "runIndex": 9,
+      "txHash": "0x358114fee0e784ca8d36ac4f551a45d4dadfa4fc47126b840a8afb513c4b8b27",
+      "latency": "8.78",
+      "status_name": "ACCEPTED",
+      "leader_result": "SUCCESS",
+      "rawOutput": "{\"category\": \"CLOUD\", \"amount\": 0, \"currency\": \"UNCLEAR\", \"quote\": \"No final sum is assessed on this proforma notice.\"}",
+      "parsed": {
+        "valid": true,
+        "category": "CLOUD",
+        "amount": 0,
+        "currency": "UNCLEAR",
+        "quote": "No final sum is assessed on this proforma notice."
+      },
+      "isParseOk": true,
+      "isHit": true
+    },
+    {
+      "runIndex": 10,
+      "txHash": "0xa9340655a2eea76f7c4693507bee3a1c9d3399446e41dee540bf385146924e57",
+      "latency": "15.39",
+      "status_name": "ACCEPTED",
+      "leader_result": "SUCCESS",
+      "rawOutput": "{\"category\": \"CLOUD\", \"amount\": 0, \"currency\": \"UNCLEAR\", \"quote\": \"No final sum is assessed on this proforma notice.\"}",
+      "parsed": {
+        "valid": true,
+        "category": "CLOUD",
+        "amount": 0,
+        "currency": "UNCLEAR",
+        "quote": "No final sum is assessed on this proforma notice."
+      },
+      "isParseOk": true,
+      "isHit": true
+    }
+  ]
+}
