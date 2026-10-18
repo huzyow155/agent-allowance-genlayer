@@ -1,5 +1,8 @@
-import re
+import os
 import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "tests"))
+
 from contracts.AllowanceVault import decide_spend
 
 # Exact duplicate of decide_spend as an independent implementation

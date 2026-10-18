@@ -48,8 +48,9 @@ function main() {
       console.log("  SpendGate Deploy Tx:  ", live.contracts.SpendGate.deployTxHash);
       console.log("  SpendGate Latency:    ", live.contracts.SpendGate.deployLatency + "s");
     }
-    console.log("  Canonical Requests Executed: ", Object.keys(live.requests || {}).length);
-    for (const [reqId, r] of Object.entries(live.requests || {})) {
+    const reqs = live.canonical_requests || live.requests || {};
+    console.log("  Canonical Requests Executed: ", Object.keys(reqs).length);
+    for (const [reqId, r] of Object.entries(reqs)) {
       console.log(`    ${reqId.padEnd(4)} Decision: ${r.actualDecision.padEnd(14)} Reason: ${r.actualReason.padEnd(22)} Latency: ${r.latency}s`);
     }
     if (live.invariants) {

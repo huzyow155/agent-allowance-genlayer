@@ -30,16 +30,37 @@ Traditional smart contracts (e.g. EVM) cannot fetch external web pages or parse 
 - **No Temporal Clock**: Limits are per-spend, total budget, and total spend count. No calendar-based daily/monthly limits.
 - **Fictional Vendors**: All test fixtures use fictional domains (`cloudco.example`, `datashop.example`, `adsy.example`).
 
-## Deployed Addresses (Studionet Chain 61999)
-- **AllowanceVault**: TBD (Deploying in Milestone 2)
-- **SpendGate**: TBD (Deploying in Milestone 5)
-- **Explorer**: `https://explorer-studio.genlayer.com/address/<address>`
+## Deployed Addresses (GenLayer Studionet - Chain 61999)
+- **AllowanceVault**: `0xd89C4fCB63773C01e8494EebaE7375C4d5992E07`
+  - Explorer: [https://explorer-studio.genlayer.com/address/0xd89C4fCB63773C01e8494EebaE7375C4d5992E07](https://explorer-studio.genlayer.com/address/0xd89C4fCB63773C01e8494EebaE7375C4d5992E07)
+  - Deploy Transaction: `0x53965fc7c6a0c0bbfec2f0eb3a76395dcfae6eeb246f4439c2794eb827051ae3`
+- **SpendGate**: `0xAe5aD4f836f199B56307b5E018eF3be8b8dd0528`
+  - Explorer: [https://explorer-studio.genlayer.com/address/0xAe5aD4f836f199B56307b5E018eF3be8b8dd0528](https://explorer-studio.genlayer.com/address/0xAe5aD4f836f199B56307b5E018eF3be8b8dd0528)
+  - Deploy Transaction: `0x3ab3717dfb119cb45a4773ebfc48d9aa1787c9339e1f5c66b8d276b89ae6e10f`
 
-## Quickstart & Testing
+## Step-by-Step Deploy to Studionet
 ```bash
-# Run unit and invariant tests
+# 1. Install dependencies
+npm install
+
+# 2. Run comprehensive tests and sanity checks
+npm run check
+
+# 3. Deploy contracts and execute on-chain evidence
+node scripts/deploy/deploy_and_run_evidence.js
+
+# 4. Extract verified facts report
+node scripts/report_facts.js
+```
+
+## Testing & Quality Assurance
+```bash
+# Run multi-layer test suite (Pure functions, star tests, oracle fuzz, mocked contracts, consensus)
 python -m unittest discover tests
 
-# Run linter and hygiene checks
-npm run check
+# Run hygiene and scanner checks
+npm run scan:ascii
+npm run scan:banned
+npm run scan:secrets
+npm run parity
 ```

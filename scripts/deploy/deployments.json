@@ -1,0 +1,20 @@
+{
+  "network": "studionet",
+  "chainId": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "explorerBase": "https://explorer-studio.genlayer.com/address",
+  "allowanceVault": {
+    "address": "0xd89C4fCB63773C01e8494EebaE7375C4d5992E07",
+    "deployTxHash": "0x53965fc7c6a0c0bbfec2f0eb3a76395dcfae6eeb246f4439c2794eb827051ae3",
+    "sha256": "ff656818cd98e7387794cce80dc0f0bb8da8b6a85e80a8deaa2e20087866b4ea",
+    "explorer": "https://explorer-studio.genlayer.com/address/0xd89C4fCB63773C01e8494EebaE7375C4d5992E07"
+  },
+  "spendGate": {
+    "address": "0xAe5aD4f836f199B56307b5E018eF3be8b8dd0528",
+    "deployTxHash": "0x3ab3717dfb119cb45a4773ebfc48d9aa1787c9339e1f5c66b8d276b89ae6e10f",
+    "sha256": "4b68ff52dbbbd6a2f3be04fbc5218d227b689a9f931665a38a3ae4608c02c6fe",
+    "explorer": "https://explorer-studio.genlayer.com/address/0xAe5aD4f836f199B56307b5E018eF3be8b8dd0528"
+  },
+  "deployedAt": "2026-10-18T08:28:40.000Z",
+  "commitHash": "556d23885b8ca58e694fa57ed306fb61853d3149"
+}
